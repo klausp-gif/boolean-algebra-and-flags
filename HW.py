@@ -21,9 +21,11 @@ print(same_last_digit)
 # 3
 while (s := int(input('Please give a positive integer s: '))) <= 0:
     print('Please provide valid positive integer')
-    pass
 
-for n in range (s+1):
-    lside = n**3 - 10 * n**2
-    if lside > s:
-                
+n = 0
+
+
+while n ** 3 - 10 * n ** 2 < s:
+    n += 1
+
+print(n, n ** 3 - 10 * n ** 2)
